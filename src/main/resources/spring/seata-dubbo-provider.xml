@@ -33,10 +33,10 @@
     <dubbo:provider timeout="10000" threads="10" threadpool="fixed" loadbalance="roundrobin"/>
 
     <!-- 第一个TCC 参与者服务发布 -->
-    <dubbo:service interface="org.apache.dubbo.samples.api.seata.TccActionOne" ref="tccActionOneImpl"/>
+    <dubbo:service interface="org.apache.dubbo.samples.api.seata.TccActionOne" ref="tccActionOneImpl" version="1.0.0"/>
 
     <!-- 第二个TCC 参与者服务发布 -->
-    <dubbo:service interface="org.apache.dubbo.samples.api.seata.TccActionTwo" ref="tccActionTwoImpl"/>
+    <dubbo:service interface="org.apache.dubbo.samples.api.seata.TccActionTwo" ref="tccActionTwoImpl" version="1.0.0"/>
 
     <!--&lt;!&ndash; 第一个TCC参与者 服务订阅 &ndash;&gt;-->
     <!--<dubbo:reference id="tccActionOne" interface="io.seata.samples.tcc.dubbo.action.TccActionOne" check="false" lazy="true"/>-->
